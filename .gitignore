@@ -216,3 +216,35 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# BEGIN InvoiceFlow AI protection rules
+
+# Credentials
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+credentials.json
+service-account*.json
+*.pem
+*.key
+
+# Private and generated data
+InvoiceFlow-AI-Data/
+data/raw/
+data/interim/
+data/processed/
+data/releases/
+rendered_dataset/
+synthetic_v1_build/
+prototypes/
+
+# Runtime artifacts
+artifacts/
+outputs/
+logs/
+models/
+*.tmp
+.ipynb_checkpoints/
+
+# END InvoiceFlow AI protection rules
